@@ -1,6 +1,6 @@
 # Coin Check
 
-A modern cross-platform cryptocurrency price tracker built with Electron and React.
+A modern cross-platform cryptocurrency price tracker built with Electron and React. Lives in your menu bar for quick access to real-time crypto prices and market data.
 
 ![Coin Check](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -12,7 +12,7 @@ A modern cross-platform cryptocurrency price tracker built with Electron and Rea
 - 💹 **Market Sentiment** - Visual indicators for bullish, bearish, or neutral market conditions
 - ⭐ **Favorites** - Save and quickly access your preferred cryptocurrencies
 - 🌐 **Multi-Currency Support** - View prices in USD, EUR, GBP, JPY, CAD, AUD
-- 📱 **Responsive Design** - Clean, modern interface optimized for desktop
+- 📱 **Menu Bar Integration** - Clean, modern interface accessible from your system menu bar
 - 🚀 **Fast & Reliable** - Built-in caching and fallback systems for optimal performance
 
 ## Quick Start
@@ -53,11 +53,12 @@ npm run dist:linux  # Linux
 
 ## Usage
 
-1. **Browse Cryptocurrencies** - The main view shows the top cryptocurrencies with real-time prices
-2. **Search** - Use the search bar to find specific coins
-3. **Filter by Chain** - Click the "All Networks" button to filter by blockchain ecosystem
-4. **View Details** - Click any cryptocurrency to see detailed charts and statistics
-5. **Add Favorites** - Star your favorite cryptocurrencies for quick access
+1. **Access from Menu Bar** - Click the Coin Check icon in your system menu bar to open the app
+2. **Browse Cryptocurrencies** - The main view shows the top cryptocurrencies with real-time prices
+3. **Search** - Use the search bar to find specific coins
+4. **Filter by Chain** - Click the "All Networks" button to filter by blockchain ecosystem
+5. **View Details** - Click any cryptocurrency to see detailed charts and statistics
+6. **Add Favorites** - Star your favorite cryptocurrencies for quick access
 
 ## Technology Stack
 
