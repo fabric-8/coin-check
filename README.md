@@ -10,6 +10,7 @@ A modern cross-platform cryptocurrency price tracker built with Electron and Rea
 - 📊 **Real-time Crypto Prices** - Track top 250 cryptocurrencies by market cap
 - 🔍 **Smart Search & Filtering** - Find cryptos by name or filter by blockchain ecosystem
 - 💹 **Market Sentiment** - Visual indicators for bullish, bearish, or neutral market conditions
+- 📈 **Detailed Token Analytics** - Interactive price charts, market stats, ATH/ATL data, and comprehensive token information
 - ⭐ **Favorites** - Save and quickly access your preferred cryptocurrencies
 - 🌐 **Multi-Currency Support** - View prices in USD, EUR, GBP, JPY, CAD, AUD
 - 📱 **Menu Bar Integration** - Clean, modern interface accessible from your system menu bar
