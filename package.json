@@ -1,0 +1,59 @@
+{
+  "name": "coin-check",
+  "version": "1.0.0",
+  "main": "dist/main/index.js",
+  "scripts": {
+    "start": "npm run build:main && electron .",
+    "dev": "concurrently \"npm run dev:renderer\" \"npm run dev:electron\"",
+    "dev:renderer": "webpack serve --config webpack.config.js",
+    "dev:electron": "wait-on http://localhost:3000 && NODE_ENV=development electron .",
+    "build": "npm run build:main && npm run build:renderer",
+    "build:main": "tsc -p tsconfig.main.json",
+    "build:renderer": "NODE_ENV=production webpack --config webpack.config.js",
+    "dist": "npm run build && electron-builder",
+    "dist:mac": "npm run build && electron-builder --mac",
+    "dist:win": "npm run build && electron-builder --win",
+    "dist:linux": "npm run build && electron-builder --linux"
+  },
+  "keywords": [
+    "crypto",
+    "cryptocurrency",
+    "price-tracker",
+    "electron",
+    "react"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "description": "Cross-platform cryptocurrency price tracker for menu bar/system tray",
+  "devDependencies": {
+    "@moralisweb3/api-mcp-server": "^1.8.2",
+    "@types/node": "^24.5.2",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "electron": "^38.1.2",
+    "electron-builder": "^26.0.12",
+    "html-webpack-plugin": "^5.6.4",
+    "postcss": "^8.5.6",
+    "postcss-loader": "^8.2.0",
+    "sharp-cli": "^5.2.0",
+    "style-loader": "^4.0.0",
+    "tailwindcss": "^3.4.17",
+    "ts-loader": "^9.5.4",
+    "typescript": "^5.9.2",
+    "wait-on": "^9.0.1",
+    "webpack": "^5.101.3",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "electron-store": "^10.1.0",
+    "electron-updater": "^6.6.2",
+    "lucide-react": "^0.544.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}
